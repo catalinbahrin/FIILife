@@ -1,0 +1,56 @@
+.background {
+    height: 100%;
+    min-height: 100vh;
+    background: url("../images/background.jpeg") scroll center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 120px; height: 120px;
+}
+
+.formInput{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.formInput::-webkit-input-placeholder { color: #888; }
+.formInput::-moz-placeholder {color: #888; }
+.formInput:-ms-input-placeholder { color: #888;}
+
+
+.formInput:focus + .divider {background: #2196F3}
+
+.formOuterContainer{
+    width: 100%;min-height: 200px; margin-top: 80px;position: absolute;
+}
+
+.formInputContainer{
+    margin-top:80px;
+    padding: 10px 50px 50px 50px ;
+}
+
+.cardContainer{
+    width: 90%;
+    max-width: 500px;
+    margin-top: -120px;
+    min-height: 300px;
+    position: relative;
+}
+
+@media all and (max-width: 970px){
+    .formInputContainer{padding: 20px 20px 40px 20px;}
+    .formOuterContainer{margin-top: 60px;}
+    #logo{height: 100px;width: 100px;}
+
+
+}
